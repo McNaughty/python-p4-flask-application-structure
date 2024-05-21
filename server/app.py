@@ -2,7 +2,7 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__)  #refers to the name of the current module app.py
 
 @app.route('/')
 def index():
@@ -14,4 +14,4 @@ def user(username):
 
 
 if __name__ == '__main__':
-    app.run(port=5555)
+    app.run(port=5555, debug=True)
